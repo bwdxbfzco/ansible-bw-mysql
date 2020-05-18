@@ -1,0 +1,4 @@
+---
+roles:
+  # install MySQL Server from Galaxy
+  - name: lean_delivery.mysql

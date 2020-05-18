@@ -1,0 +1,7 @@
+---
+# tasks file for MySQL server installation
+ - name: Configure MySQL 
+   become: true
+   hosts: all
+   roles: 
+    - lean_delivery.mysql
