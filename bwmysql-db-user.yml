@@ -9,15 +9,15 @@
   # create MySQL database
   - name: create MySQL database
     mysql_db:
-      name: "{{ bw_site_user }}_db"
+      name: "{{ bw_user }}_db"
       state: present
     
   - name: create user and assign to database
     mysql_user:
       login_password: "{{ mysql_root_password }}"
-      name: "{{ bw_site_user }}"
-      password: "{{ bw_site_password }}"
-      priv: "{{ bw_site_user }}_db.*:ALL"
+      name: "{{ bw_user }}"
+      password: "{{ bw_password }}"
+      priv: "{{ bw_user }}_db.*:ALL"
       state: present
       host: "{{ mysql_remote_host_ip }}"
       
