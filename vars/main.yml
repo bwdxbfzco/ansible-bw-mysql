@@ -4,3 +4,5 @@ mysql_bind_address: '0.0.0.0'
 mysql_packages:
   - mysql-community-server
   - mysql-community-client
+mysql_root_password: Dreams01
+mysql_remote_host_ip: %

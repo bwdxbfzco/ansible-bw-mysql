@@ -2,3 +2,6 @@
 roles:
   # install MySQL Server from Galaxy
   - name: lean_delivery.mysql
+  
+  - name: anoop.awx
+    src: https://github.com/bwdxbfzco/anoop.awx.git  
